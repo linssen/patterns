@@ -1,4 +1,10 @@
+import os
+
 from flask import Flask, Response, render_template
+
+from lib.patterns import Patterns
+
+patterns = Patterns()
 
 app = Flask(__name__)
 app.config.from_object('settings')
@@ -7,8 +13,13 @@ app.config.from_object('settings')
 def index():
     """Overview of all patterns."""
 
-    return render_template('index.html')
+    atom_templates = patterns.get_templates('atoms')
+    atoms = [patterns.get_template('atoms/button.html'),]
 
+    return render_template('_application/index.html',
+        templates=atom_templates,
+        atoms=atoms
+    )
 
 if __name__ == '__main__':
     app.run()

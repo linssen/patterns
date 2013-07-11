@@ -1,0 +1,21 @@
+{% extends '_application/base.html' %}
+
+{% block content %}
+    <h1>This is a page</h1>
+    <ul>
+        {% for template in templates %}
+            <li>{{ template }}</li>
+        {% endfor %}
+    </ul>
+
+    {% for atom in atoms %}
+        <div class="PATTERNS-atom">
+            <h2 class="PATTERNS-title">{{ atom.name }}</h2>
+            <div class="PATTERNS-raw">
+                {{ atom.raw|safe }}
+            </div>
+            <code class="PATTERNS-code"><pre>{{ atom.pretty|safe }}</pre></code>
+        </div>
+    {% endfor %}
+
+{% endblock %}

@@ -7,13 +7,14 @@ module.exports = function(grunt) {
                 styles: "./static/_application/styles/",
                 scripts: "./static/_application/scripts/"
             },
-            styles: "./static/styles",
-            scripts: "./static/scripts"
+            styles: "./static/styles/",
+            scripts: "./static/scripts/"
         },
         watch: {
             styles: {
                 files: [
-                    "<%= paths.app.styles %>**/*.scss"
+                    "<%= paths.app.styles %>**/*.scss",
+                    "<%= paths.styles %>**/*.scss"
                 ],
                 tasks: ["sass:dev"]
             }
@@ -24,7 +25,14 @@ module.exports = function(grunt) {
                     style: "expanded"
                 },
                 files: {
-                    "<%= paths.app.styles %>dist/patterns.css": "<%= paths.app.styles %>**/*.scss"
+                    "<%= paths.app.styles %>dist/patterns.css": [
+                        "<%= paths.app.styles %>**/*.scss",
+                        "!<%= paths.app.styles %>**/_*.scss"
+                    ],
+                    "<%= paths.app.styles %>dist/project.css": [
+                        "<%= paths.styles %>**/*.scss",
+                        "!<%= paths.styles %>**/_*.scss"
+                    ]
                 }
             }
         }

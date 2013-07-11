@@ -4,11 +4,14 @@
         <meta charset="utf-8">
         <title>{% block page_title %}{% endblock %}</title>
 
+        <link rel="stylesheet" href="{{ url_for('static', filename='_application/styles/dist/project.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='_application/styles/dist/patterns.css') }}">
 
     </head>
     <body>
-        {% block content %}{% endblock %}
+        <div class="PATTERNS-content">
+            {% block content %}{% endblock %}
+        </div>
     </body>
 
 
