@@ -20,7 +20,7 @@ Template: `atoms/button.html`
         <input type="button" value="{{ value|e }}" class="btn btn-secondary">
     {%- endmacro %}
 
-Template: `form.html`
+Template: `molecules/form.html`
 
     {% import 'atoms/button.html' as buttons %}
 
