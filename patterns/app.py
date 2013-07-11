@@ -14,7 +14,7 @@ def index():
     """Overview of all patterns."""
 
     atom_templates = patterns.get_templates('atoms')
-    atoms = [patterns.get_template('atoms/button.html'),]
+    atoms = [patterns.get_template('molecules/form.html'),]
 
     return render_template('_application/index.html',
         templates=atom_templates,

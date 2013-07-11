@@ -1,4 +1,4 @@
-{# This is a comment that probably won't render #}
+{#
 
     <h2 class="label">Default</h2>
 
@@ -13,7 +13,7 @@
     <div class="item">
         <input type="submit" id="" value="Cancel" class="btn btn-secondary" />
         <input type="button" id="" value="Cancel" class="btn btn-secondary" />
-        <a href="#" class="btn btn-secondary">Cancel</a>
+        <a href="#" class="btn btn-secondary">CANCEL ME</a>
     </div>
 
     <h2 class="label">Icon Buttons</h2>
@@ -35,3 +35,8 @@
         <input type="button" id="" value="Save connection and test" class="btn btn-icon btn-test-03" />
         <a href="#" class="btn btn-icon btn-test-03">Save connection and test</a>
     </div>
+#}
+
+{% macro btn_primary(value='Primary button') -%}
+    <input type="button" value="{{ value|e }}" class="btn btn-primary">
+{%- endmacro %}
