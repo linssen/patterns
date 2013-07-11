@@ -1,0 +1,19 @@
+{
+  "name": "patterns",
+  "version": "0.0.0",
+  "description": "A way to use patterns",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": "http://github.com/linssen/patterns",
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "f239eee8cad0063caa2b3b264339263bc92829f6",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-sass": "~0.4.1"
+  }
+}
