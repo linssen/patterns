@@ -31,28 +31,16 @@
         }
 
         .btn-icon {
-            background:#ebebeb;
             border-color:#b7b7b7;
             color:#222;
             padding:0 42px 0 12px;
+            background: #ebebeb url('/static/images/sprite-200px-grid-100713.png') right -3398px no-repeat;
         }
-
-        .btn-test-01 {
-            background-image: url('/static/images/sprite-200px-grid-100713.png');
-            background-position:right -3398px;
-            background-repeat:no-repeat;
+        .btn-icon-success {
+            background-position: right -3798px;
         }
-
-        .btn-test-02 {
-            background-image: url('/static/images/sprite-200px-grid-100713.png');
-            background-position:right -3598px;
-            background-repeat:no-repeat;
-        }
-
-        .btn-test-03 {
-            background-image: url('/static/images/sprite-200px-grid-100713.png');
-            background-position:right -3798px;
-            background-repeat:no-repeat;
+        .btn-icon-error {
+            background-position: right -3598px;
         }
 
         .btn:hover {

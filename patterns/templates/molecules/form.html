@@ -1,6 +1,12 @@
 {% import 'atoms/button.html' as buttons %}
+
 <form>
     <fieldset>
-        {{ buttons.btn_primary(value='Submit me') }}
+        <div>
+            {{ buttons.btn_primary(value='Submit me') }}
+            {{ buttons.btn_secondary(value='Cancel me') }}
+            or
+            {{ buttons.btn_icon(status='success') }}
+        </div>
     </fieldset>
 </form>
