@@ -29,6 +29,22 @@
     font-family: monospace;
     background-color: #FFFFFF;
     overflow-x: scroll;
+    position: relative;
+
+    .copy {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        padding: 3px;
+        cursor: pointer;
+        border-radius: 3px;
+        color: #999;
+
+        &:active {
+            color: #FFFFFF;
+            background: #0062b5;
+        }
+    }
 
     .linenos {
         text-align: right;
