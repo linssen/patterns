@@ -9,7 +9,7 @@
         <code class="PATTERNS-code">
             <button data-clipboard-target="codeblock-0" class="PATTERNS-copy icon-copy"></button>
             <pre>{{ template.pretty|safe }}</pre>
-            <textarea id="codeblock-0">{{ template.raw|e }}</textarea>
+            <textarea id="codeblock-0">{{ template.raw|e|trim }}</textarea>
         </code>
     </div>
 {% endblock %}
