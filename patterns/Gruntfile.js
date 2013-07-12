@@ -41,14 +41,8 @@ module.exports = function(grunt) {
                     style: "expanded"
                 },
                 files: {
-                    "<%= paths.app.styles %>dist/patterns.css": [
-                        "<%= paths.app.styles %>**/*.scss",
-                        "!<%= paths.app.styles %>**/_*.scss"
-                    ],
-                    "<%= paths.app.styles %>dist/project.css": [
-                        "<%= paths.styles %>**/*.scss",
-                        "!<%= paths.styles %>**/_*.scss"
-                    ]
+                    "<%= paths.app.styles %>dist/patterns.css": "<%= paths.app.styles %>screen.scss",
+                    "<%= paths.app.styles %>dist/project.css": "<%= paths.styles %>screen.scss"
                 }
             }
         }
