@@ -13,12 +13,19 @@ app.config.from_object('settings')
 def index():
     """Overview of all patterns."""
 
-    atom_templates = patterns.get_templates('atoms')
-    atoms = [patterns.get_template('molecules/form.html'),]
+    atom_templates = patterns.get_templates()
 
     return render_template('_application/index.html',
         templates=atom_templates,
-        atoms=atoms
+    )
+
+@app.route('/<path:path>', methods=['GET'])
+def template_view(path):
+    """An indavidual template examination."""
+    template = patterns.get_template(path)
+
+    return render_template('_application/examine.html',
+        template=template
     )
 
 if __name__ == '__main__':
