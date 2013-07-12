@@ -20,6 +20,7 @@ module.exports = function(grunt) {
             },
             scripts: {
                 files: [
+                    "!<%= paths.app.scripts %>dist/patterns.js",
                     "<%= paths.app.scripts %>**/*.js",
                     "<%= paths.scripts %>**/*.js"
                 ],
@@ -30,7 +31,9 @@ module.exports = function(grunt) {
             scripts: {
                 files: {
                     "<%= paths.app.scripts %>dist/patterns.js": [
-                        "<%= paths.app.scripts %>**/*.js"
+                        "!<%= paths.app.scripts %>dist/patterns.js",
+                        "<%= paths.app.scripts %>lib/**/*.js",
+                        "<%= paths.app.scripts %>*.js"
                     ]
                 }
             }
