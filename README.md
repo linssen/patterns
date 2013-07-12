@@ -38,7 +38,7 @@ Template: `molecules/form.html`
 
 ### Result
 
-![screen shot 2013-07-11 at 17 12 53](https://f.cloud.github.com/assets/67624/782965/da0f2722-ea44-11e2-9536-8d45949d9a51.png)
+![screen shot 2013-07-12 at 11 40 43](https://f.cloud.github.com/assets/67624/787641/90a387f4-eadf-11e2-867f-2737635737a6.png)
 
 
 Install
