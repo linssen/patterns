@@ -10,17 +10,17 @@
     <input type="button" value="{{ value|e }}" class="btn btn-icon {% if status %}btn-icon-{{ status }}{% endif %}">
 {%- endmacro %}
 
-<div class="item">
+<div>
     <p>This is a primary button</p>
     {{ btn_primary() }}
 </div>
 
-<div class="item">
+<div>
     <p>This is a secondary button</p>
     {{ btn_secondary() }}
 </div>
 
-<div class="item">
+<div>
     <p>This is a button with an icon</p>
     {{ btn_icon() }}
 </div>
