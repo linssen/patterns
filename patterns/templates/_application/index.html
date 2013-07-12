@@ -14,7 +14,10 @@
             <div class="PATTERNS-raw">
                 {{ atom.raw|safe }}
             </div>
-            <code class="PATTERNS-code"><pre>{{ atom.pretty|safe }}</pre></code>
+            <code class="PATTERNS-code">
+                <div class="copy">Copy to clipboard</div>
+                <pre>{{ atom.pretty|safe }}</pre>
+            </code>
         </div>
     {% endfor %}
 
