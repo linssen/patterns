@@ -17,6 +17,22 @@ module.exports = function(grunt) {
                     "<%= paths.styles %>**/*.scss"
                 ],
                 tasks: ["sass:dev"]
+            },
+            scripts: {
+                files: [
+                    "<%= paths.app.scripts %>**/*.js",
+                    "<%= paths.scripts %>**/*.js"
+                ],
+                tasks: ["concat"]
+            }
+        },
+        concat: {
+            scripts: {
+                files: {
+                    "<%= paths.app.scripts %>dist/patterns.js": [
+                        "<%= paths.app.scripts %>**/*.js"
+                    ]
+                }
             }
         },
         sass: {
@@ -38,8 +54,9 @@ module.exports = function(grunt) {
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('dev', ['sass']);
+    grunt.registerTask('dev', ['sass', 'concat']);
 };
