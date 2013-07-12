@@ -2,7 +2,8 @@
 
 {% block content %}
 
-    <h1>This is a page</h1>
+    <h1>Templates</h1>
+    <p>These are the templates you have. Pick one to examine it.</p>
     <ul>
         {% for template in templates %}
             <li><a href="{{ url_for('template_view', path=template) }}">{{ template }}</a></li>
