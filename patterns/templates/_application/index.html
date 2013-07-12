@@ -15,8 +15,9 @@
                 {{ atom.raw|safe }}
             </div>
             <code class="PATTERNS-code">
-                <a class="copy icon-copy"></a>
+                <button data-clipboard-target="codeblock-0" class="PATTERNS-copy icon-copy"></button>
                 <pre>{{ atom.pretty|safe }}</pre>
+                <textarea id="codeblock-0">{{ atom.raw|e }}</textarea>
             </code>
         </div>
     {% endfor %}

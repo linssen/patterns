@@ -31,7 +31,7 @@
     overflow-x: scroll;
     position: relative;
 
-    .copy {
+    .PATTERNS-copy {
         position: absolute;
         top: 12px;
         right: 12px;
@@ -39,11 +39,18 @@
         cursor: pointer;
         border-radius: 3px;
         color: #999;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
 
-        &:active {
+        &.active {
             color: #FFFFFF;
             background: #0062b5;
         }
+
+    }
+    textarea {
+        display: none;
     }
 
     .linenos {
