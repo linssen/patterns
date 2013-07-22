@@ -1,6 +1,9 @@
 @import 'variables', 'utils';
 @import 'pygments', 'lib/font-awesome/font-awesome';
-@import '_atoms/code', '_atoms/buttons';
+
+@import '_atoms/code';
+@import '_atoms/buttons';
+@import '_atoms/headings';
 
 
 * {
