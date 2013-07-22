@@ -4,6 +4,25 @@
     padding: #{(10/14)}em;
     background: #edf6f8;
     overflow-x: scroll;
+    position: relative;
+
+    .copy-clipboard {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding: 3px;
+        cursor: pointer;
+        border-radius: 3px;
+        color: #999;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+
+        &.active {
+            color: #FFFFFF;
+            background: #0062b5;
+        }
+    }
 
     code {
         font-size: 12px;
