@@ -11,7 +11,8 @@
     var clip = new ZeroClipboard($(".copy-clipboard"));
 
     clip.on('complete', function(client, args) {
-        alert('Copied to clipboard');
+        var lines = args.text.match(/\n|\r/g).length;
+        alert('Copied ' + lines + ' line' + (lines !== 1 ? 's' : '') + ' to clipboard');
     });
 
     clip.on('dataRequested', function (client, args) {
