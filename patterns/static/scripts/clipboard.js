@@ -21,5 +21,3 @@
     return clip;
 
 })(window, document, jQuery);
-
-
