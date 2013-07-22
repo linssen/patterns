@@ -11,7 +11,6 @@ Default
 
 <div class="styleguide-element">
     <button type="button" class="btn btn-primary">Log in</button>
-    <button type="button" class="btn btn-primary">Log in</button>
     <a href="#" class="btn btn-primary">Log In</a>
 </div>
 
