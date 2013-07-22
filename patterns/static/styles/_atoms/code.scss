@@ -1,8 +1,4 @@
 .highlight {
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    padding: #{(10/14)}em;
-    background: #edf6f8;
     overflow-x: scroll;
     position: relative;
 
@@ -24,9 +20,13 @@
         }
     }
 
-    code {
+    pre {
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        padding: #{(10/14)}em;
+        background: #f8f8f8;
         font-size: 12px;
-        line-height: 1;
+        line-height: (16/12);
         font-family: Consolas, "Liberation Mono", Courier, monospace;
     }
 }
