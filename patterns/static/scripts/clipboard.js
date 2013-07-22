@@ -15,7 +15,7 @@
     });
 
     clip.on('dataRequested', function (client, args) {
-        clip.setText($(this).next('code').text());
+        clip.setText($(this).parent().find('code').text());
     });
 
     return clip;
