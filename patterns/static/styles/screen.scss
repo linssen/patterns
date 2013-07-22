@@ -9,14 +9,16 @@
 }
 
 body {
-    font-size: 14px;
-    font-family: sans-serif;
-    color: #333;
+    background: white;
+    color: #111215;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: $BASE_FONT * 1px;
+    line-height: (18/$BASE_FONT);
 }
 
 .wrapper {
     width: 80%;
-    margin: #{(20/14)}em auto;
+    margin: em(20) auto;
 }
 .content {
     width: 80%;
@@ -38,7 +40,7 @@ h1 {
 }
 
 .styleguide-element {
-    margin-bottom: #{(20/14)}em;
-    padding: #{(20/14)}em;
+    margin-bottom: em(20);
+    padding: em(20);
     border-bottom: 1px solid #ddd;
 }
