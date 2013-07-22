@@ -1,0 +1,11 @@
+.highlight {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: #{(10/14)}em;
+
+    code {
+        font-size: 13px;
+        line-height: 1;
+        font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+    }
+}

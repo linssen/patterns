@@ -1,0 +1,32 @@
+@import 'pygments';
+@import '_atoms/code';
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.wrapper {
+    width: 80%;
+    margin: #{(20/14)}em auto;
+}
+.content {
+    width: 80%;
+    float: right;
+}
+.menu {
+    width: 18%;
+    float: left;
+}
+
+h1 {
+    font-size: 2.5;
+    font-weight: bold;
+}

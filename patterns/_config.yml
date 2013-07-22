@@ -1,2 +1,4 @@
-name: Your New Jekyll Site
+name: Patterns
 pygments: true
+permalink: none
+exclude: [node_modules, Gruntfile.js, package.json, '*.scss']
