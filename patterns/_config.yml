@@ -2,3 +2,4 @@ name: Patterns
 pygments: true
 permalink: none
 exclude: [node_modules, Gruntfile.js, package.json, '*.scss']
+baseurl: ''
