@@ -26,6 +26,7 @@ module.exports = function(grunt) {
                 files: {
                     "<%= paths.scripts %>dist/patterns.js": [
                         "!<%= paths.scripts %>dist/patterns.js",
+                        "<%= paths.scripts %>lib/jquery/*js",
                         "<%= paths.scripts %>lib/**/*.js",
                         "<%= paths.scripts %>*.js"
                     ]
