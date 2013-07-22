@@ -1,7 +1,6 @@
 .sass-cache
 
 /env
-/patterns/_site
-/patterns/node_modules
-
-/patterns/static/**/dist
+/_site
+/node_modules
+/static/**/dist
