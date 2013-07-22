@@ -2,10 +2,12 @@
     border: 1px solid #ccc;
     border-radius: 2px;
     padding: #{(10/14)}em;
+    background: #edf6f8;
+    overflow-x: scroll;
 
     code {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 1;
-        font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+        font-family: Consolas, "Liberation Mono", Courier, monospace;
     }
 }

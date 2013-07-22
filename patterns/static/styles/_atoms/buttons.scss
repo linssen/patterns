@@ -1,0 +1,73 @@
+.btn {
+            cursor: pointer;
+            background:#0062b5;
+            border:1px solid #0044a4;
+            color: #fff;
+            font-size:12px;
+            font-weight:700;
+            line-height:32px;
+            margin-right:.5rem;
+            outline:none;
+            padding:0 30px;
+            text-align:center;
+            vertical-align:middle;
+        }
+
+        input.btn,
+        button.btn {
+            height:34px;/* Height to match line-height plus include border */
+        }
+
+        a.btn {
+            display:block;
+            float:left;
+            text-decoration:none;
+        }
+
+        .btn-secondary {
+            background:#ebebeb;
+            border-color:#b7b7b7;
+            color:#333;
+        }
+
+        .btn-icon {
+            border-color:#b7b7b7;
+            color:#222;
+            padding:0 42px 0 12px;
+            background: #ebebeb url('/static/images/sprite-200px-grid-100713.png') right -3398px no-repeat;
+        }
+        .btn-icon-success {
+            background-position: right -3798px;
+        }
+        .btn-icon-error {
+            background-position: right -3598px;
+        }
+
+        .btn:hover {
+            background-color:#004ba2;
+            border-color:#00308f;
+        }
+
+        .btn-secondary:hover {
+            background-color:#e0e0e0;
+            border-color:#a2a2a2;
+        }
+
+        .btn-icon:hover {
+            background-color:#e0e0e0;
+            border-color:#a2a2a2;
+        }
+
+        input::-moz-focus-inner,
+        button::-moz-focus-inner {
+            border: 0;
+            padding: 0;
+        }
+
+        /* ENHANCEMENTS */
+
+        .btn {
+            -webkit-border-radius: 1px;
+            -moz-border-radius: 1px;
+            border-radius: 1px;
+        }

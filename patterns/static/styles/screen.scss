@@ -1,5 +1,5 @@
 @import 'pygments';
-@import '_atoms/code';
+@import '_atoms/code', '_atoms/buttons';
 
 
 * {
@@ -26,7 +26,18 @@ body {
     float: left;
 }
 
+h1,
+p {
+    margin-bottom: 15px;
+}
+
 h1 {
     font-size: 2.5;
     font-weight: bold;
+}
+
+.styleguide-element {
+    margin-bottom: #{(20/14)}em;
+    padding: #{(20/14)}em;
+    border-bottom: 1px solid #ddd;
 }
