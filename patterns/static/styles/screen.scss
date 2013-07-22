@@ -30,6 +30,38 @@ body {
 .menu {
     width: 18%;
     float: left;
+    background: #efefef;
+    padding: 3px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border: 1px solid #d8d8d8;
+    }
+
+    a {
+        display: block;
+        background: #fafafb;
+        text-decoration: none;
+        padding: 5px;
+        margin-bottom: 1px;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        color: #333;
+
+        &:hover,
+        &:focus {
+            background: white;
+        }
+    }
+    li:last-child a {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    .active a {
+        background: white;
+        border-left: 3px solid $C_HIGHLIGHT;
+    }
 }
 
 h1,
