@@ -1,7 +1,7 @@
 .sass-cache
 
 /env
+/patterns/_site
 /patterns/node_modules
-/patterns/local_settings.py
 
 /patterns/static/**/dist
